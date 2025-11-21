@@ -32,6 +32,7 @@ export const LoginPage = ({onLoginSuccess}) => {
     return (
         <ThemeProvider theme={defaultTheme}>
             <Container component="main" maxWidth="xs">
+                <h1>Sign in - FINAL TEST 123</h1>
                 <CssBaseline />
                 <Box
                     sx={{
