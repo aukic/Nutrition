@@ -1,0 +1,8 @@
+**/node_modules
+**/dist
+**/build
+frontend/.env
+frontend/.env.local
+target
+.git
+.idea

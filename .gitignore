@@ -1,0 +1,103 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+
+# =================================================================
+# ===                    General / OS Files                     ===
+# =================================================================
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =================================================================
+# ===                Spring Boot / Java / Maven                 ===
+# =================================================================
+# Compiled Java class files
+*.class
+
+# Log files
+*.log
+logs/
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Secrets and sensitive configuration
+application.properties
+application.yml
+
+# Maven Wrapper
+!/mvnw
+!/mvnw.cmd
+!/.mvn/wrapper/maven-wrapper.jar
+!/.mvn/wrapper/maven-wrapper.properties
+
+# =================================================================
+# ===                  Vite / React / Node.js                   ===
+# =================================================================
+# Node modules
+frontend/node_modules/
+
+# Vite build output directory
+# We are building into src/main/resources/static, which should be tracked,
+# so we don't ignore it here. If you build to a different frontend directory, add it.
+# e.g., frontend/dist/
+
+# Vite cache
+frontend/.vite/
+
+# Log files
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Local environment variables
+frontend/.env.local
+frontend/.env.*.local
+
+# Test reports
+frontend/coverage/
+frontend/junit.xml
+frontend/test-results.xml
