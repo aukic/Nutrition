@@ -93,7 +93,7 @@ export default function IngredientDetailPage() {
             const fetchIngredient = async () => {
                 setLoading(true);
                 try {
-                    const response = await apiService.get(`api/ingredients/${id}`);
+                    const response = await apiService.get(`/api/ingredients/${id}`);
                     const fetchedData = {};
                     for (const key in initialIngredientState) {
                         fetchedData[key] = response.data[key] === null ? '' : response.data[key];
@@ -135,10 +135,10 @@ export default function IngredientDetailPage() {
 
         try {
             if (isNew) {
-                await apiService.post('/ingredients', payload);
+                await apiService.post('/api/ingredients', payload);
                 setSuccess('Ingredient created successfully!');
             } else {
-                await apiService.put(`/ingredients/${id}`, payload);
+                await apiService.put(`/api/ingredients/${id}`, payload);
                 setSuccess('Ingredient updated successfully!');
             }
             setTimeout(() => navigate('/ingredients'), 1500);
@@ -151,7 +151,7 @@ export default function IngredientDetailPage() {
     const handleDelete = async () => {
         if (globalThis.confirm('Are you sure you want to delete this ingredient?')) {
             try {
-                await apiService.delete(`/ingredients/${id}`);
+                await apiService.delete(`/api/ingredients/${id}`);
                 navigate('/ingredients');
             } catch (err) {
                 setError('Failed to delete the ingredient.');
