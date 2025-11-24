@@ -6,7 +6,7 @@ import apiService from "../api/apiService.js";
 import {useNavigate} from "react-router-dom";
 
 const defaultTheme = createTheme();
-export const LoginPage = ({onLoginSuccess}) => {
+export default function LoginPage ({onLoginSuccess}) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');

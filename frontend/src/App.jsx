@@ -7,9 +7,9 @@ import Sidebar from './components/Sidebar';
 
 // Import Pages
 import HomePage from './pages/HomePage';
-import {LoginPage} from './pages/LoginPage';
+import LoginPage from './pages/LoginPage';
 import RegistrationPage from './pages/RegistrationPage';
-import {IngredientListPage} from './pages/IngredientListPage';
+import IngredientListPage from './pages/IngredientListPage';
 import IngredientDetailPage from './pages/IngredientDetailPage';
 import DishListPage from './pages/DishListPage';
 import DishDetailPage from './pages/DishDetailPage';

@@ -7,7 +7,7 @@ import useDebounce from '../hooks/useDebounce';
 import TablePaginationActions from '../components/TablePaginationActions';
 import {TablePagination} from "@mui/material";
 import Typography from "@mui/material/Typography";
-export const IngredientListPage = () => {
+export default function IngredientListPag() {
     const [ingredients, setIngredients] = useState([]);
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(15);
